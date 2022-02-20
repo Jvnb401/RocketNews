@@ -44,7 +44,14 @@ header img {
 }
 
 main {
-  margin-left: 30px;
+  margin: 90px 0 0 30px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
 }
 
 h1 {
@@ -75,5 +82,26 @@ legend {
 
   .background .black {
     width: 100vw;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  header img {
+    width: 85vw;
+    margin: 50px 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 30px;
+  }
+
+  .text {
+    height: 325px;
   }
 }
