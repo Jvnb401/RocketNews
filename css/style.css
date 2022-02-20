@@ -38,7 +38,12 @@
   z-index: -1;
 }
 
-header, main {
+header img {
+  margin: 50px 0 0 30px;
+  width: 25vw;
+}
+
+main {
   margin-left: 30px;
 }
 
