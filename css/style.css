@@ -4,12 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --body-bg-color: #121214;
+  --text-color: #E1E1E6;
+  --title-color: #04D361;
+  --form-color: #A8A8A8;
+  --bg-button-color: #8257e5;
+
+  font-family: 'Spartan', sans-serif;
+}
+
 .background {
   display:block;
   width: 100vw;
   height: 100vh;
   position: absolute;
   overflow: hidden;
+  z-index: -1;
 }
 
 .background img {
@@ -20,11 +31,36 @@
 }
 
 .background .black {
-  background-color: #000;
+  background-color: var(--body-bg-color);
   position: absolute;
   width: 50vw;
   height: 100vh;
   z-index: -1;
+}
+
+header, main {
+  margin-left: 30px;
+}
+
+h1 {
+  color: var(--title-color);
+  font-weight: bold 700;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+}
+
+h2, p {
+  color: var(--text-color);
+}
+
+legend {
+  color: var(--form-color);
 }
 
 @media (max-width: 999px){
