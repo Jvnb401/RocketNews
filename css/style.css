@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  display:block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+
+.background img {
+  position: absolute;
+  margin-left: 25vw;
+  width: 85vw;
+  z-index: -2;
+}
+
+.background .black {
+  background-color: #000;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+@media (max-width: 999px){
+  .background img {
+    display: none;
+  }
+
+  .background .black {
+    width: 100vw;
+  }
+}
